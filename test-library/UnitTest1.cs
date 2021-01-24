@@ -31,7 +31,7 @@ namespace test_library
             testlist.Add(34);
             testlist.Add(55);
             testlist.Add(89);
-            //Assert.Equal(testlist,Fibonacci.first(10));
+            Assert.Equal(testlist,Fibonacci.First(10));
         }
         [Fact]
         public void TestTests()
