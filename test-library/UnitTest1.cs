@@ -32,6 +32,7 @@ namespace test_library
             testlist.Add(55);
             testlist.Add(89);
             Assert.Equal(testlist,Fibonacci.First(10));
+            Assert.Equal(testlist,Fibonacci.NoGreaterThan(100));
         }
         [Fact]
         public void TestTests()

@@ -9,11 +9,17 @@ namespace euler2
     {
         static void Main(string[] args)
         {
-            List<int> result = Fibonacci.First(10);
-            foreach (int value in result)
+            List<int> Fibs = Fibonacci.NoGreaterThan(4000000);
+            List<int> result = new List<int>();
+            foreach (int number in Fibs)
             {
-                Console.WriteLine($"{value}");
+                if (!Tests.IsOdd(number))
+                {
+                    result.Add(number);
+                }
             }
+            int sum = result.Sum();
+            Console.Write($"The sum of all even Fibonacci numbers less than 4 million is {sum}");
         }
     }
 }
