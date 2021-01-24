@@ -9,7 +9,11 @@ namespace euler2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<int> result = Fibonacci.First(10);
+            foreach (int value in result)
+            {
+                Console.WriteLine($"{value}");
+            }
         }
     }
 }

@@ -11,7 +11,7 @@ namespace library
             List<int> FibonacciNumbers = new List<int>();
             FibonacciNumbers.Add(1);
             FibonacciNumbers.Add(2);
-            foreach (int index in Enumerable.Range(2, n).ToArray())
+            foreach (int index in Enumerable.Range(2, n-2).ToArray())
             {
                 FibonacciNumbers.Add(FibonacciNumbers[index-1]+FibonacciNumbers[index-2]);
             }
