@@ -17,5 +17,10 @@ namespace test_library
             Assert.Equal(testlist,Multiples.of(3,10));
             Assert.NotEqual(testlist,Multiples.of(5,10));
         }
+        [Fact]
+        public void Test2()
+        {
+            
+        }
     }
 }
